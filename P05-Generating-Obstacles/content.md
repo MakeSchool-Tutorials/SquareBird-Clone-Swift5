@@ -456,6 +456,10 @@ if let spawner = self.childNode(withName: "obstacleSpawner") as? ObstacleSpawner
 > we will be implementing a way to generate the obstacles in a different way in the last part of the tutorial.
 >
 
+-
+
+>[info] The blocks might look a little off that will be fixed in the last part.
+
 # Summary
 
 we now have the object spawner working! This is the good but we can't control the player yet :(

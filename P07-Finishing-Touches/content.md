@@ -242,7 +242,6 @@ if bodyB.categoryBitMask == PhysicsCategory.Barrier {
     if bodyA.categoryBitMask == PhysicsCategory.Obstacle {
             bodyA.node?.removeFromParent()
         }
-
     }
 
 }

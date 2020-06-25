@@ -61,7 +61,7 @@ point of the scene to the lower left.
 
 The GameScene file should now look like this
 
-![Adding background image](../Tutorial-Images/firstSceneAnchor
+![Adding background image](../Tutorial-Images/emptyGameScene
 .png)
 
 
@@ -87,13 +87,16 @@ to a better color.
 > Set the position to `(0,0)` since it wont be visible to the player and we want it out of the way.
 > Name the empty Node _scrollNode_ this will be import later
 
-![Adding the ground image position](../Tutorial-Images/firstSceneGround.png)
+-
+
 >[action]
 Once you have the empty node setup press _Command+Shift+L_ again but this time you will go to the media tab and find the image named _ground_ drag the image into the scene and set the parent equal to the _scrollNode_.
 
 > With the ground image selected head over to the property editor, go down to Physics Definition >> Body Type and set it to `Bounding Rectangle`. After setting it, options will appear below it. Make sure all of them are _Unchecked_
->
-> Once that's done look over at the property editor and edit the ground's position to `(423,46)`, Copy it and paste it to create another ground node. this time you'll notice that the parent is already to the _scrollNode_ so we don't have to do that well just edit the position and set it to `(1266,46)`.
+
+![Adding the ground image position](../Tutorial-Images/firstSceneGround.png)
+
+>[action] Once that's done look over at the property editor and edit the ground's position to `(423,46)`, Copy it and paste it to create another ground node. this time you'll notice that the parent is already to the _scrollNode_ so we don't have to do that well just edit the position and set it to `(1266,46)`.
 >
 
 ![Adding the second ground image position](../Tutorial-Images/firstSceneGround2.png)
@@ -130,9 +133,9 @@ effect.
 
 ![Adding the second ground image position](../Tutorial-Images/firstSceneObstacleSpawner.png)
 
->[action]
-> Now we can get started adding what will generate our level.
->
+
+Now we can get started adding what will generate our level.
+
 > [action] Open the media library again and drag the the obstacle image onto the scene. Set the _Parent_ property to `obstacleSpawner` an then
 > set the position to `(173,281)` this migh be a little different for everyone. just make sure it snaps to the ground.
 Now set the _Name_ property to `spawnBlock-8` naming here is very important so I'd advice sticking to the naming I provide.
