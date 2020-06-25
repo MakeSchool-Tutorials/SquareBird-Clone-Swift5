@@ -33,7 +33,7 @@ You will learn to implement the following:
 ## Adding artwork
 
 > [action] After the project is created, you should
-> [download our art pack for this game](https://github.com/MakeSchool-Tutorials/Hoppy-Bunny-SpriteKit-Swift3-V2/raw/master/assets.zip).
+> [download our art pack for this game](https://github.com/MakeSchool-Tutorials/SquareBird-Clone-Swift5/blob/master/GameAssets.zip).
 > Next you will add the art pack you just downloaded to your Xcode project by
 > first unpacking the archive. Select the `Assets.xcassets` folder in Xcode
 > project navigator, then drag the downloaded assets into Xcode as shown below:
