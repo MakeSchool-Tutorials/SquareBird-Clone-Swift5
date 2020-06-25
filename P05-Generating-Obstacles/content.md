@@ -401,18 +401,21 @@ func generate(scene: SKScene) {
         child.removeFromParent()
       }
     }
+    // once we are done remove all the children that are left over if any and remove the copy itself
     copy.removeAllChildren()
     copy.removeFromParent()
 
+    // make animations to move the child forever
     let move = SKAction.moveBy(x: -100, y: 0, duration: scrollSpeed)
     let repeater = SKAction.repeatForever(move)
-
+    // for all the children in the column we add it to the scene and run the animation
     for copiedChild in column {
       scene.addChild(copiedChild)
       copiedChild.run(repeater)
       }
+      // we then reset the column back to an emty array to get it ready for the next column
     column = []
-
+    //reset the spawnTimer and columnPointer
     spawnTimer = 0
     columnPointer += 1
   }
