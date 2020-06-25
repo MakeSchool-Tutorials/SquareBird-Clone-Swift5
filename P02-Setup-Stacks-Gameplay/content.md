@@ -51,7 +51,7 @@ point of the scene to the lower left.
 > [action] Set Anchor Point of both x and y to 0.
 >
 
-![Adding background image](../Tutorial-Images/firstSceneAnchor
+![first scene Anchor](../Tutorial-Images/firstSceneAnchor
 .png)
 
 
@@ -61,7 +61,7 @@ point of the scene to the lower left.
 
 The GameScene file should now look like this
 
-![Adding background image](../Tutorial-Images/emptyGameScene
+![Empty game scene](../Tutorial-Images/emptyGameScene
 .png)
 
 
@@ -82,7 +82,7 @@ to a better color.
 > the object library and drag an _Empty_ node into the scene.
 >
 
-![empty Scene](../Tutorial-Images/firstSceneEmptyNode.png)
+![empty Scene Node](../Tutorial-Images/firstSceneEmptyNode.png)
 >[action]
 > Set the position to `(0,0)` since it wont be visible to the player and we want it out of the way.
 > Name the empty Node _scrollNode_ this will be import later
