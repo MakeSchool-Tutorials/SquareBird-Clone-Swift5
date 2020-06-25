@@ -333,7 +333,6 @@ func generate(scene: SKScene) {
   if spawnTimer > Double(timeSpace!) {
     let copy = self.copy() as! SKSpriteNode
     var column: [SKSpriteNode] = []
-
     for row in 0...currentScheme.count - 1 {
     }
   }
@@ -350,10 +349,12 @@ func generate(scene: SKScene) {
   if spawnTimer > Double(timeSpace!) {
     let copy = self.copy() as! SKSpriteNode
     var column: [SKSpriteNode] = []
-
+    // for every row in the current scheme we want to check if we've reached the end of the columns
     for row in 0...currentScheme.count - 1 {
       if columnPointer > currentScheme[row].count - 1{
+        // reset the columnPointer
         columnPointer = 0
+        // get the nextScheme
         currentScheme = schemes.getRandomScheme()
       }
 
@@ -379,15 +380,22 @@ func generate(scene: SKScene) {
         columnPointer = 0
         currentScheme = schemes.getRandomScheme()
       }
+      // copy the node that represents the row we are currently working on
       let child = copy.childNode(withName: "spawnBlock-\(row)") as! SKSpriteNode
+      // if spot in the scheme is == 1 then we modify it else we remove it.
       if currentScheme[row][pointer] == 1 {
+        // make it  random color to add variety
         child.color = UIColor.random
         child.colorBlendFactor = 0.7
+        // convert the position from it's parent space to the scene space.
         child.position = scene.convert(child.position, to: scene)
         let scenePos = scene.convertPoint(fromView: copy.position)
+        // move the x to the location of its parent
         child.position.x = scenePos.x + child.size.width
+        // edit the physicsBody properties
         child.physicsBody?.categoryBitMask = PhysicsCategory.Obstacle
         child.physicsBody?.collisionBitMask = PhysicsCategory.Player | PhysicsCategory.Obstacle
+        // add a copy to the column array
         column.append(child.copy() as! SKSpriteNode)
       } else {
         child.removeFromParent()
