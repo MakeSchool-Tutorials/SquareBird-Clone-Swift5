@@ -1,0 +1,6 @@
+title: "Stacks IOS Tutorial"
+cover: cover.png
+solution_url: https://github.com/WesleyEspinoza/StacksOnStacks
+teaser_text: |
+    In this tutorial you will learn how to set up a game project using the editor for visualization.
+    You will learn the basics of infinate terrain generation, and player physics.
