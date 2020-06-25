@@ -74,7 +74,7 @@ to a better color.
 > near the top of the property inspector. Set the color to a nice sky blue. You
 > can use your own color or use the _System Teal Color_ as used in the image below.
 
-![Adding background image](../Tutorial-Images/firstSceneColor.png)
+![Adding background color](../Tutorial-Images/firstSceneColor.png)
 
 # Add the ground image
 
@@ -82,7 +82,7 @@ to a better color.
 > the object library and drag an _Empty_ node into the scene.
 >
 
-![Adding the ground image](../Tutorial-Images/firstSceneEmptyNode.png)
+![empty Scene](../Tutorial-Images/firstSceneEmptyNode.png)
 >[action]
 > Set the position to `(0,0)` since it wont be visible to the player and we want it out of the way.
 > Name the empty Node _scrollNode_ this will be import later
