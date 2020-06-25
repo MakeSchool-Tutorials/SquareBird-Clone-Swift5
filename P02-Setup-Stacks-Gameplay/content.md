@@ -51,8 +51,7 @@ point of the scene to the lower left.
 > [action] Set Anchor Point of both x and y to 0.
 >
 
-![first scene Anchor](../Tutorial-Images/firstSceneAnchor
-.png)
+![first scene Anchor](../Tutorial-Images/firstSceneAnchor.png)
 
 
 # Setting up the GameScene.swift
@@ -61,8 +60,7 @@ point of the scene to the lower left.
 
 The GameScene file should now look like this
 
-![Empty game scene](../Tutorial-Images/emptyGameScene
-.png)
+![Empty game scene](../Tutorial-Images/emptyGameScene.png)
 
 
 # Set the Background Color
