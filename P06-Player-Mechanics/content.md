@@ -45,7 +45,7 @@ Now that we have our varibles set we can add the setup method to the player clas
 ```
 func setup(){
   // set the texture to the head from our assets file
-    self.texture = SKTexture(imageNamed: "head")
+    self.texture = SKTexture(imageNamed: "birdhead")
     // give the player a physicsBody
     self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 100, height: 100))
     self.physicsBody?.affectedByGravity = true
