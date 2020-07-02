@@ -371,7 +371,7 @@ Now that we can keep track of the column and row we need to start making copies 
 func generate(scene: SKScene) {
   initTimeSpace()
   spawnTimer += fixedDelta
-  if spawnTimer > Double(timeSpace-!) {
+  if spawnTimer > Double(timeSpace!) {
     let copy = self.copy() as! SKSpriteNode
     var column: [SKSpriteNode] = []
 
@@ -383,8 +383,8 @@ func generate(scene: SKScene) {
       // copy the node that represents the row we are currently working on
       let child = copy.childNode(withName: "spawnBlock-\(row)") as! SKSpriteNode
       // if spot in the scheme is == 1 then we modify it else we remove it.
-      if currentScheme[row][pointer] == 1 {
-        // make it  random color to add variety
+      if currentScheme[row][columnPointer] == 1 {
+        // make it random color to add variety
         child.color = UIColor.random
         child.colorBlendFactor = 0.7
         // convert the position from it's parent space to the scene space.
