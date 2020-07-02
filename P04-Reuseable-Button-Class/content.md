@@ -275,7 +275,7 @@ now the code to connect it should look something like this.
 
 ```
 if let playButton = self.childNode(withName: "playButton") as? CustomButtonNode {
-  self.playButton = playbutton
+  self.playButton = playButton
 } else {
   print("playButton was not initialized properly")
 }
